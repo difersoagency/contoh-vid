@@ -9,9 +9,9 @@ import List from './../components/List.vue'
 </script>
 
 <template>
-<!-- <audio id="musicplayer" autoplay>
+<audio id="musicplayer" autoplay>
     <source src="/src/assets/backsound.mp3" />
-</audio> -->
+</audio>
 
     <section class="overflow-x-hidden"> 
 
@@ -117,15 +117,34 @@ import List from './../components/List.vue'
 
         <!-- Pesan -->
         <div class="pesan mt-20 mb-12">
-            <p class="text-5xl align-middle font-vibes mb-8 text-center">Pesan Kerabat</p>
+            <p class="text-5xl align-middle font-vibes mb-8 text-center">Kirim Pesan</p>
             <Messages></Messages>
         </div>
 
 
         <!-- List Pesan -->
 
-        <div class="py-4 px-3">
-            <!-- <List></List> -->
+        <div class="py-9 px-8 bg-black h-96 overflow-scroll">
+    <!-- <List></List> -->
+    <!-- v-for="pesan in pesan" -->
+            <h2 class="text-white font-vibes text-5xl text-center">Pesan Kerabat</h2>
+            <!-- <div  class="mb-7 px-4 py-3 rounded-lg border-2 border-white mt-6">
+                <h3 class="text-xl font-prata font-bold mb-4 text-white">testing</h3>
+                <p class="font-raleway text-white">testing</p>
+            </div> -->
         </div>
+
+<!-- Ucapan Terimakasih -->
+<div class="">
+    <div class="absolute px-8 py-7 text-center z-30" >
+        
+        <p class="text-lg font-cour text-black ">Kami yang berbahagia. Keluarga besar kedua mempelai</p>
+        <h2 class="text-5xl font-dance font-bold mt-5 text-black">Daniel & Stefani</h2>
+        <p class="text-lg font-cour text-black mt-5">Atas Kehadiran dan Doa Restunya <br> Kami Ucapkan Terimakasih</p>
+    </div>
+
+    <div class="w-screen h-72 bg-white absolute opacity-70 z-10"></div>
+    <div class="w-full h-72 bg-[url('./assets/12.jpg')]  bg-cover bg-top"></div>
+</div>
     </section>
 </template>
