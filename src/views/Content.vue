@@ -4,7 +4,19 @@ import Countdown from './../components/Countdown.vue'
 import Gallery from './../components/Gallery.vue'
 import Messages from './../components/Messages.vue'
 import List from './../components/List.vue'
+import {ref, onMounted} from 'vue';
+import api from '../api/index';
+const posts = ref([]);
+const fetchDataPosts = async () => {
+    await api.get('https://api.elitech.id/mssg/data')
+    .then(response =>{
+        posts.value = response.data.data
+    })
+};
 
+onMounted(() => {
+    fetchDataPosts();
+});
 
 </script>
 
@@ -49,12 +61,13 @@ import List from './../components/List.vue'
         <div class="foto mt-8 px-4 mb-8">
             <hr class="mb-8">
             <p class="text-center text-lg font-cour">Kindly honor us with your presence at the marriage ceremony of...</p>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center mt-8">
-                <img src="../assets/4.jpg" alt="" class="w-80 mx-auto h-80 rounded-full object-cover object-top">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+                <img src="../assets/5.jpg" alt="" class="w-80 mx-auto h-80 rounded-full object-top object-cover">
                 <div>
-                    <p class="text-black font-cour text-4xl lg:text-6xl text-center">Daniel Oktafian K.</p>
-                    <p class="text-center text-lg font-bold font-raleway mt-4">Putra pertama dari</p>
-                    <p class="text-center font-raleway">Yan Piet Kalele & Duwi Esti Wahyuningsih</p>
+                    <p class="text-black font-cour text-4xl lg:text-6xl text-center">Stefani Dwi Hardiyanti</p>
+                    <p class="text-center text-lg font-bold font-raleway mt-4">Putri kedua dari</p>
+                    <p class="text-center font-raleway">Suyadi (Alm) & Enny Puspandari  </p>
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-5 mt-9 mb-8 items-center">
@@ -62,12 +75,12 @@ import List from './../components/List.vue'
                 <p class="text-center font-dance text-3xl">&</p>        
                 <hr>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
-                <img src="../assets/5.jpg" alt="" class="w-80 mx-auto h-80 rounded-full object-top object-cover">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center mt-8">
+                <img src="../assets/4.jpg" alt="" class="w-80 mx-auto h-80 rounded-full object-cover object-top">
                 <div>
-                    <p class="text-black font-cour text-4xl lg:text-6xl text-center">Stefani</p>
-                    <p class="text-center text-lg font-bold font-raleway mt-4">Putri kedua dari</p>
-                    <p class="text-center font-raleway">Suyadi (Alm) & Enny Puspandari  </p>
+                    <p class="text-black font-cour text-4xl lg:text-6xl text-center">Daniel Oktafian K.</p>
+                    <p class="text-center text-lg font-bold font-raleway mt-4">Putra pertama dari</p>
+                    <p class="text-center font-raleway">Yan Piet Kalele & Duwi Esti Wahyuningsih</p>
                 </div>
             </div>
         </div>
@@ -82,24 +95,24 @@ import List from './../components/List.vue'
                         <div class="mb-auto text-center lg:grid lg:grid-cols-2">
                             <div class="px-8 py-6 bg-black mx-6 mt-7 rounded-xl">
                                 <div class="image w-full h-48 bg-[url('./assets/9.jpg')] bg-cover rounded-2xl bg-center mb-6"></div>
-                                <h2 class="text-white font-prata text-4xl">Pemberkatan</h2>
+                                <h2 class="text-white font-prata text-4xl">Holy Matrimony</h2>
                                 <p class="text-white text-lg mb-4 font-raleway mt-3">Rabu, 04 Oktober 2023</p>
                                 <hr class="mb-3">
-                                <p class="text-white font-raleway mt-3">Jam : 13:00 WIB s/d Selesai</p>
+                                <p class="text-white font-raleway mt-3">Jam : 12:00 WIB s/d Selesai</p>
                                 <p class="text-white font-raleway mt-3">Kapel Graha Bethany Nginden</p>
                                 <p class="text-white font-raleway mt-3">Jl. Nginden Intan Timur I no. 29</p>
                                 <p class="text-white mb-6 font-raleway mt-3">Surabaya</p>
-                                <a href="https://goo.gl/maps/tEKXapGxT8tbZwfV7" class="bg-yellow-600 font-bold text-white px-4 py-2 rounded-md font-raleway mt-3">See Location</a>
+                                <a href="https://goo.gl/maps/tEKXapGxT8tbZwfV7" target="_blank" class="bg-yellow-600 font-bold text-white px-4 py-2 rounded-md font-raleway mt-3">See Location</a>
                             </div> 
                             <div class="px-8 py-5 bg-black mx-6 mt-7 rounded-xl">
                                 <div class="image w-full h-48 bg-[url('./assets/1.jpg')] bg-cover rounded-2xl bg-center mb-6"></div>
                                 <h2 class="text-white font-prata text-4xl">Resepsi</h2>
                                 <p class="text-white text-lg mb-4 font-raleway mt-3">Rabu, 04 Oktober 2023</p>
                                 <hr class="mb-3">
-                                <p class="text-white font-raleway mt-3">Jam : 13:00 WIB s/d Selesai</p>
+                                <p class="text-white font-raleway mt-3">Jam : 16:00 WIB s/d 21:00 WIB</p>
                                 <p class="text-white font-raleway mt-3">Jl. Margorukun IX/10</p>
                                 <p class="text-white mb-6 font-raleway mt-3">Surabaya</p>
-                                <a href="" class="bg-yellow-600 font-bold text-white px-4 py-2 rounded-md font-raleway mt-3">See Location</a>
+                                <a href="https://maps.app.goo.gl/ZRjRP1kBqR6XeBE8A?g_st=iw" target="_blank" class="bg-yellow-600 font-bold text-white px-4 py-2 rounded-md font-raleway mt-3">See Location</a>
                             </div> 
                         </div>
                     </div>
@@ -126,12 +139,12 @@ import List from './../components/List.vue'
 
         <div class="py-9 px-8 bg-black h-96 overflow-scroll">
     <!-- <List></List> -->
-    <!-- v-for="pesan in pesan" -->
+    
             <h2 class="text-white font-vibes text-5xl text-center">Pesan Kerabat</h2>
-            <!-- <div  class="mb-7 px-4 py-3 rounded-lg border-2 border-white mt-6">
-                <h3 class="text-xl font-prata font-bold mb-4 text-white">testing</h3>
-                <p class="font-raleway text-white">testing</p>
-            </div> -->
+            <div  class="mb-7 px-4 py-3 rounded-lg border-2 border-white mt-6" v-for="(post,index) in posts" :key="index">
+                <h3 class="text-xl font-prata font-bold mb-4 text-white">{{post.nama}}</h3>
+                <p class="font-raleway text-white">{{post.pesan}}</p>
+            </div>
         </div>
 
 <!-- Ucapan Terimakasih -->
