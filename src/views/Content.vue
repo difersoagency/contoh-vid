@@ -31,7 +31,7 @@ onMounted(() => {
         <div class="h-screen w-screen absolute z-20 flex flex-col justify-center ">
             <div class="mt-auto mb-36 ml-10">
                 <p class="text-white text-3xl align-middle font-vibes mb-2">The Wedding Of</p>
-                <p class="text-white font-prata leading-snug font-bold text-7xl ">Daniel & Stefani</p>
+                <p class="text-white font-prata leading-snug font-bold text-6xl ">Daniel & Stefani</p>
                 <p class="text-white text-xl font-cour">Rabu, 04 Oktober 2023</p>
             </div>
         </div>
@@ -78,7 +78,7 @@ onMounted(() => {
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center mt-8">
                 <img src="../assets/4.jpg" alt="" class="w-80 mx-auto h-80 rounded-full object-cover object-top">
                 <div>
-                    <p class="text-black font-cour text-4xl lg:text-6xl text-center">Daniel Oktafian K.</p>
+                    <p class="text-black font-cour text-4xl lg:text-6xl text-center">Daniel Oktafian Kalele</p>
                     <p class="text-center text-lg font-bold font-raleway mt-4">Putra pertama dari</p>
                     <p class="text-center font-raleway">Yan Piet Kalele & Duwi Esti Wahyuningsih</p>
                 </div>
@@ -95,7 +95,7 @@ onMounted(() => {
                         <div class="mb-auto text-center lg:grid lg:grid-cols-2">
                             <div class="px-8 py-6 bg-black mx-6 mt-7 rounded-xl">
                                 <div class="image w-full h-48 bg-[url('./assets/9.jpg')] bg-cover rounded-2xl bg-center mb-6"></div>
-                                <h2 class="text-white font-prata text-4xl">Holy Matrimony</h2>
+                                <h2 class="text-white font-prata text-2xl">Holy Matrimony</h2>
                                 <p class="text-white text-lg mb-4 font-raleway mt-3">Rabu, 04 Oktober 2023</p>
                                 <hr class="mb-3">
                                 <p class="text-white font-raleway mt-3">Jam : 12:00 WIB s/d Selesai</p>
@@ -106,7 +106,7 @@ onMounted(() => {
                             </div> 
                             <div class="px-8 py-5 bg-black mx-6 mt-7 rounded-xl">
                                 <div class="image w-full h-48 bg-[url('./assets/1.jpg')] bg-cover rounded-2xl bg-center mb-6"></div>
-                                <h2 class="text-white font-prata text-4xl">Resepsi</h2>
+                                <h2 class="text-white font-prata text-2xl">Resepsi</h2>
                                 <p class="text-white text-lg mb-4 font-raleway mt-3">Rabu, 04 Oktober 2023</p>
                                 <hr class="mb-3">
                                 <p class="text-white font-raleway mt-3">Jam : 16:00 WIB s/d 21:00 WIB</p>
