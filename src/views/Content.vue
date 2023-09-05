@@ -13,14 +13,13 @@ fetch('https://api.elitech.id/mssg/data')
 .then(response => response.json())
 .then(data => mssg.value = data);
 
-// Post Data REST API
 
 </script>
 
 <template>
-<!-- <audio id="musicplayer" autoplay>
+<audio id="musicplayer" autoplay>
     <source src="/src/assets/backsound.mp3" />
-</audio> -->
+</audio>
 
     <section class="overflow-x-hidden"> 
 
@@ -102,13 +101,13 @@ fetch('https://api.elitech.id/mssg/data')
                                 <a href="https://goo.gl/maps/tEKXapGxT8tbZwfV7" target="_blank" class="bg-yellow-600 font-bold text-white px-4 py-2 rounded-md font-raleway mt-3">See Location</a>
                             </div> 
                             <div class="px-8 py-5 bg-black mx-6 mt-7 rounded-xl">
-                                <div class="image w-full h-48 bg-[url('./assets/1.jpg')] bg-cover rounded-2xl bg-center mb-6"></div>
+                                <div class="image w-full h-48 bg-[url('./assets/2.jpg')] bg-cover rounded-2xl bg-center mb-6"></div>
                                 <h2 class="text-white font-prata text-2xl">Resepsi</h2>
                                 <p class="text-white text-lg mb-4 font-raleway mt-3">Rabu, 04 Oktober 2023</p>
                                 <hr class="mb-3">
                                 <p class="text-white font-raleway mt-3">Jam : 16:00 WIB s/d 21:00 WIB</p>
-                                <p class="text-white font-raleway mt-3">Jl. Margorukun IX/10</p>
-                                <p class="text-white mb-6 font-raleway mt-3">Surabaya</p>
+                                <p class="text-white font-raleway mt-3 mb-6">Jl. Margorukun IX/10, Surabaya</p>
+
                                 <a href="https://maps.app.goo.gl/ZRjRP1kBqR6XeBE8A?g_st=iw" target="_blank" class="bg-yellow-600 font-bold text-white px-4 py-2 rounded-md font-raleway mt-3">See Location</a>
                             </div> 
                         </div>
