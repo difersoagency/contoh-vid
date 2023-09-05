@@ -4,26 +4,23 @@ import Countdown from './../components/Countdown.vue'
 import Gallery from './../components/Gallery.vue'
 import Messages from './../components/Messages.vue'
 import List from './../components/List.vue'
-import {ref, onMounted} from 'vue';
-import api from '../api/index';
-const posts = ref([]);
-const fetchDataPosts = async () => {
-    await api.get('https://api.elitech.id/mssg/data')
-    .then(response =>{
-        posts.value = response.data.data
-    })
-};
+import {ref} from 'vue';
 
-onMounted(() => {
-    fetchDataPosts();
-});
+
+const mssg = ref(null);
+// Fetch Data REST API
+fetch('https://api.elitech.id/mssg/data')
+.then(response => response.json())
+.then(data => mssg.value = data);
+
+// Post Data REST API
 
 </script>
 
 <template>
-<audio id="musicplayer" autoplay>
+<!-- <audio id="musicplayer" autoplay>
     <source src="/src/assets/backsound.mp3" />
-</audio>
+</audio> -->
 
     <section class="overflow-x-hidden"> 
 
@@ -62,7 +59,7 @@ onMounted(() => {
             <hr class="mb-8">
             <p class="text-center text-lg font-cour">Kindly honor us with your presence at the marriage ceremony of...</p>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center mt-8">
                 <img src="../assets/5.jpg" alt="" class="w-80 mx-auto h-80 rounded-full object-top object-cover">
                 <div>
                     <p class="text-black font-cour text-4xl lg:text-6xl text-center">Stefani Dwi Hardiyanti</p>
@@ -141,9 +138,9 @@ onMounted(() => {
     <!-- <List></List> -->
     
             <h2 class="text-white font-vibes text-5xl text-center">Pesan Kerabat</h2>
-            <div  class="mb-7 px-4 py-3 rounded-lg border-2 border-white mt-6" v-for="(post,index) in posts" :key="index">
-                <h3 class="text-xl font-prata font-bold mb-4 text-white">{{post.nama}}</h3>
-                <p class="font-raleway text-white">{{post.pesan}}</p>
+            <div  class="mb-7 px-4 py-3 rounded-lg border-2 border-white mt-6" v-for="msg in mssg" :key="msg.id">
+                <h3 class="text-xl font-prata font-bold mb-4 text-white">{{msg.nama}}</h3>
+                <p class="font-raleway text-white">{{msg.pesan}}</p>
             </div>
         </div>
 
