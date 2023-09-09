@@ -1,8 +1,12 @@
+
+
 <template >
-    <section class="overflow-hidden">
-        <div class="h-screen w-screen absolute z-20 flex flex-col justify-center items-center">
+    <section class="overflow-hidden" id>
+        <div class="h-screen w-screen absolute z-20 flex flex-col justify-center items-center" id="undangan">
             <div class="m-auto text-center">
-                <p class="font-vibes text-white text-2xl mb-3">The Wedding of</p>
+                <!-- <p class="undangan"></p> -->
+                <p class="font-dance text-white text-4xl mb-3">Dear, <span class="namaUndangan">{{ nama }}</span></p>
+                <p class="font-raleway text-white text-sm mt-3 mb-4">You're invited to wedding of</p>
                 <h1 class="text-white font-serif font-bold text-6xl text-center align-middle font-dance mb-10"><span class="text-8xl">D</span>aniel & <span class="text-8xl">S</span>tefani</h1>
                 <router-link :to="{name: 'content'}" class="text-black py-2 px-4 border border-white bg-white rounded-full hover:bg-transparent hover:text-white transition-colors font-bold text-sm">Open Invitation</router-link>
             </div>
@@ -12,6 +16,31 @@
     </section>
 </template>
 
-<script setup>
+
+<script type="text/javascript">
+    // import Vue from 'vue'
     import { RouterLink } from 'vue-router'
+    
+    const keyValue = window.location.search;
+    const urlParams = new URLSearchParams(keyValue);
+    // let nama = document.querySelector('.namaUndangan');
+    
+    const param1 = urlParams.get('to');
+    // nama.innerHTML = param1;
+    console.log(param1);
+
+    export default {
+        data() {
+            return {
+                nama : param1
+            }
+        },
+    }
+
+    // new Vue({
+    //     el: '#undangan',
+    //     data: {
+    //         nama : param1,
+    //     }
+    // })
 </script>
