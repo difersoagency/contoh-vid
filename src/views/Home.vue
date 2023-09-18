@@ -8,7 +8,7 @@
                 <p class="font-dance text-white text-4xl mb-3">Dear, <span class="namaUndangan">{{ nama }}</span></p>
                 <p class="font-raleway text-white text-sm mt-3 mb-4">You're invited to wedding of</p>
                 <h1 class="text-white font-serif font-bold text-6xl text-center align-middle font-dance mb-10"><span class="text-8xl">D</span>aniel & <span class="text-8xl">S</span>tefani</h1>
-                <router-link :to="{name: 'content'}" class="text-black py-2 px-4 border border-white bg-white rounded-full hover:bg-transparent hover:text-white transition-colors font-bold text-sm">Open Invitation</router-link>
+                <router-link :to="{name: 'content'}" @click="playy" class="text-black py-2 px-4 border border-white bg-white rounded-full hover:bg-transparent hover:text-white transition-colors font-bold text-sm" id="openInv">Open Invitation</router-link>
             </div>
         </div>
         <div class="w-screen h-screen bg-black absolute opacity-70 z-10"></div>

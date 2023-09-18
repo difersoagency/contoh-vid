@@ -19,6 +19,9 @@ fetch('https://api.elitech.id/mssg/data')
 <template>
 <audio id="musicplayer" autoplay>
     <source src="/src/assets/backsound.mp3" type="audio/ogg">
+</audio>
+
+<audio id="musicplayer" autoplay>
     <source src="/src/assets/backsound.mp3" type="audio/mpeg">
 </audio>
 
