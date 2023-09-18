@@ -37,8 +37,8 @@ fetch('https://api.elitech.id/mssg/data')
         </div>
         <div class="w-screen h-screen bg-black absolute opacity-60 z-10"></div>
         <div class="w-screen h-screen mb-12 bg-center bg-black overflow-hidden">
-            <video class="w-screen h-full object-cover object-center" autoplay loop >
-                <source src="../assets/vid2.mp4" type="video/mp4">
+            <video class="w-screen h-full object-cover object-center" src="../assets/vid2.mp4" autoplay loop poster="../assets/12.jpg" playsinline>
+                <!-- <source src="../assets/vid2.mp4" type="video/mp4"> -->
             </video>
         </div>
         
