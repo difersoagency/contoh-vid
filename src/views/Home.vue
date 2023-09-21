@@ -21,21 +21,21 @@
     // import Vue from 'vue'
     import { RouterLink } from 'vue-router'
     
-    const keyValue = window.location.search;
-    const urlParams = new URLSearchParams(keyValue);
+    // const keyValue = window.location.search;
+    // const urlParams = new URLSearchParams(keyValue);
     // let nama = document.querySelector('.namaUndangan');
     
-    const param1 = urlParams.get('to');
+    // const param1 = urlParams.get('to');
     // nama.innerHTML = param1;
-    console.log(param1);
+    // console.log(param1);
 
-    export default {
-        data() {
-            return {
-                nama : param1
-            }
-        },
-    }
+    // export default {
+    //     data() {
+    //         return {
+    //             nama : param1
+    //         }
+    //     },
+    // }
 
     // new Vue({
     //     el: '#undangan',

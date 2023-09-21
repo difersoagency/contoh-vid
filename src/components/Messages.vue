@@ -1,6 +1,6 @@
 <template>
     <div class="px-9">
-        <form @submit="inputData">
+        <form @submit.prevent="inputData">
             <div>
                 <label for="name" class="font-raleway">Nama</label>
                 <input type="text" name="name" id="name" class="w-full border border-black mt-3 px-4 py-2 rounded-2xl" v-model="nama">
@@ -39,8 +39,14 @@ export default {
                 })
             })
             .then(response => response.json())
-            .then(data => console.log(data))
-        }
+            // .setTimeout(() => {
+            //     window.location.reload
+            // }, 1000);
+            // .then(data => console.log(data))
+            .then(window.location.reload())
+        },
+
+       
     }
 }
 
