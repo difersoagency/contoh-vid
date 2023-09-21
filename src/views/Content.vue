@@ -17,13 +17,13 @@ fetch('https://api.elitech.id/mssg/data')
 </script>
 
 <template>
-<audio id="musicplayer" autoplay>
+<audio controls id="musicplayer" autoplay control class="fixed bottom-0 left-0 mx-auto w-full mb-5 z-40 ">
     <source src="/src/assets/backsound.mp3" type="audio/ogg">
 </audio>
 
-<audio id="musicplayer" autoplay>
+<!-- <audio id="musicplayer" autoplay >
     <source src="/src/assets/backsound.mp3" type="audio/mpeg">
-</audio>
+</audio> -->
 
     <section class="overflow-x-hidden"> 
 

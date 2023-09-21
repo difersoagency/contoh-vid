@@ -1,6 +1,6 @@
 <template>
     <div class="px-9">
-        <form @submit.prevent="inputData">
+        <form @submit="inputData">
             <div>
                 <label for="name" class="font-raleway">Nama</label>
                 <input type="text" name="name" id="name" class="w-full border border-black mt-3 px-4 py-2 rounded-2xl" v-model="nama">
