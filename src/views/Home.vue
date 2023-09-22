@@ -23,10 +23,10 @@
     
     const keyValue = window.location.search;
     const urlParams = new URLSearchParams(keyValue);
-    let nama = document.querySelector('.namaUndangan');
+    // let nama = document.querySelector('.namaUndangan');
     
     const param1 = urlParams.get('to');
-    nama.innerHTML = param1;
+    // nama.innerHTML = param1;
     console.log(param1);
 
     export default {
@@ -37,10 +37,10 @@
         },
     }
 
-    new Vue({
-        el: '#undangan',
-        data: {
-            nama : param1,
-        }
-    })
+    // new Vue({
+    //     el: '#undangan',
+    //     data: {
+    //         nama : param1,
+    //     }
+    // })
 </script>
