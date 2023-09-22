@@ -18,7 +18,10 @@ fetch('https://api.elitech.id/mssg/data')
 
 <template>
 <audio controls id="musicplayer" autoplay control class="fixed bottom-0 left-0 mx-auto w-full mb-5 z-40 ">
-    <source src="/src/assets/backsound.mp3" type="audio/ogg">
+    <source src="/src/assets/backsound.ogg" type="audio/ogg">
+    <source src="/src/assets/backsound.mp3" type="audio/mpeg">
+
+    Sorry, but your browser doesn't support audio.
 </audio>
 
 <!-- <audio id="musicplayer" autoplay >
