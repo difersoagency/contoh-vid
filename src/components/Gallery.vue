@@ -4,15 +4,15 @@
 
 <template>
     <div class="px-9 grid grid-cols-8 grid-rows-8 gap-4">
-        <figure class="img-gal col-start-1 col-end-3 row-start-1 row-end-6">
+        <figure class="img-gal col-start-1 col-end-3 row-start-1 row-end-2">
             <img src="../../src/assets/13.jpg" alt="" class="w-full h-full object-cover ">
         </figure>
 
-        <figure class="img-gal  col-start-3 col-end-5 row-start-1 row-end-6">
+        <figure class="img-gal  col-start-3 col-end-5 row-start-1 row-end-2">
             <img src="../../src/assets/6.jpg" alt="" class="w-full h-full object-cover">
         </figure>
 
-        <figure class="img-gal  col-start-5 col-end-9 row-start-1 row-end-7">
+        <figure class="img-gal  col-start-5 col-end-9 row-start-1 row-end-2">
             <img src="../../src/assets/7.jpg" alt="" class="w-full h-full object-cover object-top">
         </figure>
 
